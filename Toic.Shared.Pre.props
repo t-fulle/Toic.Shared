@@ -1,5 +1,9 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-<!-- Toic.Shared.props Version 0.2 -->
+<!-- Toic.Shared.props Version 0.2.1 -->
+    <PropertyGroup>
+        <BaseIntermediateOutputPath>..\..\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+        <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
+    </PropertyGroup>
 
     <PropertyGroup>
         <DotNet>net8.0</DotNet>
@@ -9,7 +13,7 @@
         <PlatformTarget>AnyCPU</PlatformTarget>
 
         <!-- Add framework subfolder in bin? -->
-        <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <!-- Add Runtime subfolder in bin? -->
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <!-- Need NuGet License? -->
