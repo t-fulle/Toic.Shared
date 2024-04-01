@@ -5,6 +5,7 @@
         <UseWPF Condition=" $(TargetFramework.Contains('-windows')) ">true</UseWPF>
 
         <OutputPath>..\..\bin\$(Product)\$(Configuration)</OutputPath>
-        <PackageOutputPath>..\..\..\Toic.NuGets\$(Product)</PackageOutputPath>
+        <PackageOutputPath>..\..\..\.NuGets\$(Product)</PackageOutputPath>
+        <!-- <PackageOutputPath>C:\Toic\.NuGets\$(Product)</PackageOutputPath> -->
     </PropertyGroup>
 </Project>
