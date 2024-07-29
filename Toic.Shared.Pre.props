@@ -1,8 +1,8 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-<!-- Toic.Shared.props Version 0.2.2 -->
+<!-- Toic.Shared.Pre.props Version 0.2.3 -->
     <PropertyGroup>
-        <BaseIntermediateOutputPath>..\..\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
-        <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
+        <BaseIntermediateOutputPath>..\..\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>  
+        <OutDir>..\..\bin\$(MSBuildProjectName)\$(Configuration)</OutDir>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -40,9 +40,5 @@
         <!-- Create NuGet on Build? -->
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    </PropertyGroup>
-
-    <PropertyGroup>
-        <OutputPath>..\..\bin\$(MSBuildProjectName)\$(Configuration)</OutputPath>
     </PropertyGroup>
 </Project>
