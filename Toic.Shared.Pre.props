@@ -1,5 +1,5 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-<!-- Toic.Shared.Pre.props Version 0.2.3 -->
+<!-- Toic.Shared.Pre.props Version 0.2.4 -->
     <PropertyGroup>
         <BaseIntermediateOutputPath>..\..\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>  
         <OutDir>..\..\bin\$(MSBuildProjectName)\$(Configuration)</OutDir>
@@ -20,6 +20,7 @@
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         
         <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
     <ItemGroup>
