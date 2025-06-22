@@ -1,5 +1,5 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-<!-- Toic.Shared.Pre.props Version 0.2.4 -->
+<!-- Toic.Shared.Pre.props Version 0.2.5 -->
     <PropertyGroup>
         <BaseIntermediateOutputPath>..\..\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>  
         <OutDir>..\..\bin\$(MSBuildProjectName)\$(Configuration)</OutDir>
@@ -21,6 +21,9 @@
         
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+
+        <!-- Disables the check for matching namespace and folder structure. See: https://learn.microsoft.com/de-de/dotnet/fundamentals/code-analysis/style-rules/ide0130 -->
+        <dotnet_style_namespace_match_folder>false</dotnet_style_namespace_match_folder>
     </PropertyGroup>
 
     <ItemGroup>
